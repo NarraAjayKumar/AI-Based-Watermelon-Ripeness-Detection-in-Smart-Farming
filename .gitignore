@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environment directories
+env/
+# Ignore any virtual environment directories anywhere in the tree
+**/sd_env/
+**/sd_finetune_env/
+**/env/
+**/venv/
+**/ENV/
+**/Lib/site-packages/
+**/site-packages/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Model checkpoints (keep only final versions stored at repo root)
+*.pth
+*.pt
+!/watermelon_classifier.pth
+!/yolov8s.pt
+!/unet_model_weights.pth
+
+# Dataset and image files
+**/dataset/
+**/data/
+**/images/
+**/masks/
+**/masklabels/
+**/Watermelon/
+**/Water melon/
+**/flipped/
+**/Unseendata/
+
+# Keep specific files if needed
+!.gitkeep
+
+# Logs and runs
+runs/
+logs/
+tensorboard/
+
+# OS-specific
+.DS_Store
+Thumbs.db

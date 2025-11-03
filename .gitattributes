@@ -1,0 +1,19 @@
+# Enforce consistent line endings in the repository to reduce LF/CRLF warnings
+# Store files with normalized LF endings in the repo and check them out with LF.
+# If you prefer CRLF on Windows working copy, change eol to crlf or set core.autocrlf.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+README.md text eol=lf
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.ckpt binary
+*.zip binary
